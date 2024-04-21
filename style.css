@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+    list-style: none;
+}
+.page1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 6vw;
+}
+nav ul {
+    display: flex;
+    gap: 1.5vw;
+    font-size: 0.9vw;
+    font-weight: 500;
+    padding-top: 1vw;
+    position: relative;
+    right: 6vw;
+    
+}
+nav .navright {
+    padding-top: 1vw;
+}
+.navright span {
+    position: relative;
+    right: 2.5vw;
+}
+.navright i {
+    font-size: 1.4vw;
+}
+nav ul li:hover {
+    text-decoration: underline;
+}
+.page1 .content {
+    padding: 2vw 6vw;
+    position: relative;
+    top: 18vw;
+}
+.page1 .content h1 {
+    width: 400px;
+    font-size: 3vw;
+    line-height: 3vw;
+    font-weight: 560;
+}
+.content .btn1 {
+    padding: 1vw;
+    background: none;
+    border: 2px solid white;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 2vw;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    left: 0;
+    bottom: -100%;
+    transition: all ease 0.4s;
+}
+.btn1:hover::after{
+    bottom: 0;
+
+}
+.btn1:hover span{
+    color: black;
+    position: relative;
+    z-index: 2;
+}
+.page2 , .page3 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img2.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.page2 .content2 , .page3 .content3 , .page4 .content4 {
+    padding: 2vw 6vw;
+    position: relative;
+    top: 25vw;
+}
+.page2 .content2 h3 , .page3 .content3 h3 , .page4 .content4 h3 {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1vw;
+}
+.page2 .content2 h1 , .page3 .content3 h1 {
+    width: 700px;
+    font-size: 3vw;
+    font-weight: 600;
+}
+.content2 .btn2 , .content3 .btn3 , .content4 .btn4{
+    padding: 1vw;
+    background: none;
+    border: 2px solid white;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 1.4vw;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.btn2::after , .btn3::after , .btn4::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    left: 0;
+    bottom: -100%;
+    transition: all ease 0.4s;
+}
+.btn2:hover::after , .btn3:hover::after , .btn4:hover::after{
+    bottom: 0;
+}
+.btn2:hover span , .btn3:hover span , .btn4:hover span{
+    position: relative;
+    color: black;
+    z-index: 2;
+}
+.page3 {
+    background-image: url("img3.jpg");
+    background-size: cover;
+}
+.page4 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img4.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.page4 .content4 h1 {
+    width: 550px;
+    font-size: 3vw;
+    font-weight: 600;
+    line-height: 3vw;
+    position: relative;
+    top: 1vw;
+}
+.content4 .btn4 {
+    position: relative;
+    top: 2vw;
+}
